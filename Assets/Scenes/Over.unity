@@ -558,11 +558,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4529021524200936334, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.6
+      value: -4.56
       objectReference: {fileID: 0}
     - target: {fileID: 4529021524200936334, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.46
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 4529021524200936334, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -596,9 +596,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4618961125085493631, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
+      propertyPath: m_Name
+      value: Rocket Body
+      objectReference: {fileID: 0}
     - target: {fileID: 4718422392870369070, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006990454635232143, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006990454635232143, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006990454635232143, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006990454635232143, guid: 9ac97bd0c8e74449cac7f777189e4e12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
