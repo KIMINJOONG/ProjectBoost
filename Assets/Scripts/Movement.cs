@@ -36,11 +36,11 @@ public class Movement : MonoBehaviour
 
             StartThrusting();
         }
-        else
-        {
-            StopThrusting();
+        // else
+        // {
+        //     StopThrusting();
 
-        }
+        // }
 
 
     }
@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            StopRotating();
+            // StopRotating();
         }
     }
 
@@ -72,14 +72,14 @@ public class Movement : MonoBehaviour
 
         if (!mainBooster.isPlaying)
         {
-            mainBooster.Play();
+            // mainBooster.Play();
         }
     }
 
     void StopThrusting()
     {
-        audioSource.Stop();
-        mainBooster.Stop();
+        // audioSource.Stop();
+        // mainBooster.Stop();
     }
 
 
@@ -89,7 +89,7 @@ public class Movement : MonoBehaviour
         AapplyRotation(rotationThrust);
         if (!rightBooster.isPlaying)
         {
-            rightBooster.Play();
+            // rightBooster.Play();
         }
     }
 
@@ -98,14 +98,14 @@ public class Movement : MonoBehaviour
         AapplyRotation(-rotationThrust);
         if (!leftBooster.isPlaying)
         {
-            leftBooster.Play();
+            // leftBooster.Play();
         }
     }
 
     void StopRotating()
     {
-        leftBooster.Stop();
-        rightBooster.Stop();
+        // leftBooster.Stop();
+        // rightBooster.Stop();
     }
 
     void AapplyRotation(float rotationThisFrame)

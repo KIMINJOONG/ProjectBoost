@@ -25,8 +25,23 @@ public class Boost : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             // Rocket에서 Rigidbody를 접근
             rb = Rocket.GetComponent<Rigidbody>();
             audioSource = GetComponent<AudioSource>();
+
+
+            if (rb == null)
+            {
+                Debug.LogError("Rigidbody not found on targetObject!");
+            }
+
+
             Transform mainBoosterTransform = Rocket.GetComponent<Transform>().Find("Rocket Jet Particles");
             mainBooster = mainBoosterTransform.GetComponent<ParticleSystem>();
+
+            if (mainBooster == null)
+            {
+                Debug.LogError("rightBooster null");
+            }
+
+
 
 
 
@@ -69,6 +84,7 @@ public class Boost : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             StopThrusting();
 
+
         }
 
     }
@@ -86,10 +102,8 @@ public class Boost : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     void StartThrusting()
     {
         rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-        Debug.Log(audioSource);
         if (!audioSource.isPlaying)
         {
-            Debug.Log(mainEngine);
             audioSource.PlayOneShot(mainEngine);
         }
 
@@ -97,6 +111,7 @@ public class Boost : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             mainBooster.Play();
         }
+
     }
 
     void StopThrusting()

@@ -188,7 +188,7 @@ MonoBehaviour:
     - line: '|   applicationIdentifier:'
     - line: '|     Android: com.UnityTechnologies.com.unity.template.urpblank'
     - line: '|     Standalone: com.Unity-Technologies.com.unity.template.urp-blank'
-    - line: '|     iPhone: com.Unity-Technologies.com.unity.template.urp-blank'
+    - line: '|     iPhone: com.project.boost'
     - line: '|   buildNumber:'
     - line: '|     Standalone: 0'
     - line: '|     VisionOS: 0'

@@ -14,6 +14,9 @@ public class RightMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // "Player"라는 이름을 가진 GameObject를 찾습니다.
         Rocket = GameObject.Find("Rocket");
 
+
+
+
         if (Rocket == null)
         {
             Debug.LogError("Player GameObject not found!");
@@ -27,6 +30,14 @@ public class RightMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             if (rb == null)
             {
                 Debug.LogError("Rigidbody not found on targetObject!");
+            }
+
+            Transform leftBoosterTransform = Rocket.GetComponent<Transform>().Find("Left Thruster Particles");
+            leftBooster = leftBoosterTransform.GetComponent<ParticleSystem>();
+
+            if (leftBooster == null)
+            {
+                Debug.LogError("rightBooster null");
             }
         }
         else
@@ -43,6 +54,10 @@ public class RightMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (isPressed)
         {
             RotateLeft();
+        }
+        else
+        {
+            leftBooster.Stop();
         }
 
     }

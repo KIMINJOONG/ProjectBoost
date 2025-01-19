@@ -47,7 +47,6 @@ public class CollisionHandler : MonoBehaviour
         {
 
             case "Friendly":
-                Debug.Log("Friendly");
                 break;
 
             case "Finish":
